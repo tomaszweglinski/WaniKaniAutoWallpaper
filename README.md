@@ -10,7 +10,7 @@ WaniKani Automatic Wallpaper is a Java 1.8 application developed for Windows 10 
 - If you want your wallpaper to be set and updated automatically:
  - Create shortcut to `WaniKaniAutoWallpaper.jar`.
  - In shortcut properties, change destination to something similar to:<br>`C:\Path\To\Correct\Directory\WaniKaniAutoWallpaper.jar -k 9b83...edc7 -f "Font Name" --auto`
- - Press `Ctrl + R`, type `shell:startup` and move the shortcut to the `Autostart` directory.
+ - Press `WinKey + R`, type `shell:startup` and move the shortcut to the `Autostart` directory.
  - Updating wallpaper after reboot may take about 30 seconds.
 
 Type `java -jar WaniKaniAutoWallpaper.jar --help` in order to see full list of options (colors, margins etc.).
