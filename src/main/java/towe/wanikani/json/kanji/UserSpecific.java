@@ -38,13 +38,13 @@ public class UserSpecific {
     @JsonProperty("srs_numeric")
     private Integer srsNumeric;
     @JsonProperty("unlocked_date")
-    private Integer unlockedDate;
+    private Long unlockedDate;
     @JsonProperty("available_date")
-    private Integer availableDate;
+    private Long availableDate;
     @JsonProperty("burned")
     private Boolean burned;
     @JsonProperty("burned_date")
-    private Integer burnedDate;
+    private Long burnedDate;
     @JsonProperty("meaning_correct")
     private Integer meaningCorrect;
     @JsonProperty("meaning_incorrect")
@@ -111,7 +111,7 @@ public class UserSpecific {
      * @return The unlockedDate
      */
     @JsonProperty("unlocked_date")
-    public Integer getUnlockedDate() {
+    public Long getUnlockedDate() {
         return unlockedDate;
     }
 
@@ -120,7 +120,7 @@ public class UserSpecific {
      * @param unlockedDate The unlocked_date
      */
     @JsonProperty("unlocked_date")
-    public void setUnlockedDate(Integer unlockedDate) {
+    public void setUnlockedDate(Long unlockedDate) {
         this.unlockedDate = unlockedDate;
     }
 
@@ -129,7 +129,7 @@ public class UserSpecific {
      * @return The availableDate
      */
     @JsonProperty("available_date")
-    public Integer getAvailableDate() {
+    public Long getAvailableDate() {
         return availableDate;
     }
 
@@ -138,7 +138,7 @@ public class UserSpecific {
      * @param availableDate The available_date
      */
     @JsonProperty("available_date")
-    public void setAvailableDate(Integer availableDate) {
+    public void setAvailableDate(Long availableDate) {
         this.availableDate = availableDate;
     }
 
@@ -165,7 +165,7 @@ public class UserSpecific {
      * @return The burnedDate
      */
     @JsonProperty("burned_date")
-    public Integer getBurnedDate() {
+    public Long getBurnedDate() {
         return burnedDate;
     }
 
@@ -174,7 +174,7 @@ public class UserSpecific {
      * @param burnedDate The burned_date
      */
     @JsonProperty("burned_date")
-    public void setBurnedDate(Integer burnedDate) {
+    public void setBurnedDate(Long burnedDate) {
         this.burnedDate = burnedDate;
     }
 
