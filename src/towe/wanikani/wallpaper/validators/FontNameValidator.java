@@ -2,6 +2,7 @@ package towe.wanikani.wallpaper.validators;
 
 import com.beust.jcommander.IParameterValidator;
 import com.beust.jcommander.ParameterException;
+
 import java.awt.Font;
 import java.awt.GraphicsEnvironment;
 
@@ -14,6 +15,7 @@ public class FontNameValidator implements IParameterValidator {
                 return;
             }
         }
+
         throw new ParameterException("\"" + name + "\": font named \"" + value + "\" does not exist");
     }
 }

@@ -3,6 +3,7 @@ package towe.wanikani.wallpaper;
 import java.awt.Font;
 import java.awt.Graphics2D;
 import java.util.List;
+
 import towe.wanikani.json.kanji.Kanji;
 
 class Layout {
@@ -18,11 +19,13 @@ class Layout {
         this.kanjiList = kanjiList;
         this.settings = settings;
         int symbolSize = settings.getHeight() + 1, rows, cols;
+
         do {
             --symbolSize;
             rows = (settings.getHeight() - settings.getMarginTop() - settings.getMarginBottom()) / symbolSize;
             cols = (settings.getWidth() - settings.getMarginLeft() - settings.getMarginRight()) / symbolSize;
         } while (rows * cols < kanjiList.size() && symbolSize > 1);
+
         fontSize = symbolSize;
         columns = cols;
         leftMargin = (settings.getWidth() + settings.getMarginLeft() - settings.getMarginRight() - cols * symbolSize) * 0.5;

@@ -3,6 +3,7 @@ package towe.wanikani.json;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
+
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -13,17 +14,17 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Generated("org.jsonschema2pojo")
 @JsonPropertyOrder({
-    "username",
-    "gravatar",
-    "level",
-    "title",
-    "about",
-    "website",
-    "twitter",
-    "topics_count",
-    "posts_count",
-    "creation_date",
-    "vacation_date"
+        "username",
+        "gravatar",
+        "level",
+        "title",
+        "about",
+        "website",
+        "twitter",
+        "topics_count",
+        "posts_count",
+        "creation_date",
+        "vacation_date"
 })
 public class UserInformation {
 
@@ -53,7 +54,6 @@ public class UserInformation {
     private final Map<String, Object> additionalProperties = new HashMap<>();
 
     /**
-     *
      * @return The username
      */
     @JsonProperty("username")
@@ -62,7 +62,6 @@ public class UserInformation {
     }
 
     /**
-     *
      * @param username The username
      */
     @JsonProperty("username")
@@ -71,7 +70,6 @@ public class UserInformation {
     }
 
     /**
-     *
      * @return The gravatar
      */
     @JsonProperty("gravatar")
@@ -80,7 +78,6 @@ public class UserInformation {
     }
 
     /**
-     *
      * @param gravatar The gravatar
      */
     @JsonProperty("gravatar")
@@ -89,7 +86,6 @@ public class UserInformation {
     }
 
     /**
-     *
      * @return The level
      */
     @JsonProperty("level")
@@ -98,7 +94,6 @@ public class UserInformation {
     }
 
     /**
-     *
      * @param level The level
      */
     @JsonProperty("level")
@@ -107,7 +102,6 @@ public class UserInformation {
     }
 
     /**
-     *
      * @return The title
      */
     @JsonProperty("title")
@@ -116,7 +110,6 @@ public class UserInformation {
     }
 
     /**
-     *
      * @param title The title
      */
     @JsonProperty("title")
@@ -125,7 +118,6 @@ public class UserInformation {
     }
 
     /**
-     *
      * @return The about
      */
     @JsonProperty("about")
@@ -134,7 +126,6 @@ public class UserInformation {
     }
 
     /**
-     *
      * @param about The about
      */
     @JsonProperty("about")
@@ -143,7 +134,6 @@ public class UserInformation {
     }
 
     /**
-     *
      * @return The website
      */
     @JsonProperty("website")
@@ -152,7 +142,6 @@ public class UserInformation {
     }
 
     /**
-     *
      * @param website The website
      */
     @JsonProperty("website")
@@ -161,7 +150,6 @@ public class UserInformation {
     }
 
     /**
-     *
      * @return The twitter
      */
     @JsonProperty("twitter")
@@ -170,7 +158,6 @@ public class UserInformation {
     }
 
     /**
-     *
      * @param twitter The twitter
      */
     @JsonProperty("twitter")
@@ -179,7 +166,6 @@ public class UserInformation {
     }
 
     /**
-     *
      * @return The topicsCount
      */
     @JsonProperty("topics_count")
@@ -188,7 +174,6 @@ public class UserInformation {
     }
 
     /**
-     *
      * @param topicsCount The topics_count
      */
     @JsonProperty("topics_count")
@@ -197,7 +182,6 @@ public class UserInformation {
     }
 
     /**
-     *
      * @return The postsCount
      */
     @JsonProperty("posts_count")
@@ -206,7 +190,6 @@ public class UserInformation {
     }
 
     /**
-     *
      * @param postsCount The posts_count
      */
     @JsonProperty("posts_count")
@@ -215,7 +198,6 @@ public class UserInformation {
     }
 
     /**
-     *
      * @return The creationDate
      */
     @JsonProperty("creation_date")
@@ -224,7 +206,6 @@ public class UserInformation {
     }
 
     /**
-     *
      * @param creationDate The creation_date
      */
     @JsonProperty("creation_date")
@@ -233,7 +214,6 @@ public class UserInformation {
     }
 
     /**
-     *
      * @return The vacationDate
      */
     @JsonProperty("vacation_date")
@@ -242,7 +222,6 @@ public class UserInformation {
     }
 
     /**
-     *
      * @param vacationDate The vacation_date
      */
     @JsonProperty("vacation_date")

@@ -14,11 +14,13 @@ public abstract class IntValidator implements IParameterValidator {
     @Override
     public void validate(String name, String value) throws ParameterException {
         boolean invalid;
+
         try {
             invalid = Integer.parseInt(value) < minValue;
         } catch (NumberFormatException nfe) {
             invalid = true;
         }
+
         if (invalid) {
             throw new ParameterException("\"" + name + "\": \"" + value + "\" is not a " + getClass().getSimpleName().toLowerCase() + " integer");
         }

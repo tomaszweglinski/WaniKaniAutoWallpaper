@@ -4,8 +4,10 @@ import towe.wanikani.wallpaper.validators.ColorConverter;
 import towe.wanikani.wallpaper.validators.FontNameValidator;
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
+
 import java.awt.Color;
 import java.awt.Toolkit;
+
 import towe.wanikani.json.kanji.Kanji;
 import towe.wanikani.json.kanji.UserSpecific;
 import towe.wanikani.wallpaper.validators.ApiKeyValidator;
@@ -63,7 +65,7 @@ class Settings {
 
     @Parameter(names = {"-f", "--font"}, description = "Font name", validateWith = FontNameValidator.class)
     private String fontName;
-    
+
     @Parameter(names = "--overview", description = "Generates wallpapers for all supported fonts available in system")
     private boolean overviewMode;
 
@@ -72,7 +74,7 @@ class Settings {
 
     @Parameter(names = "--help", description = "Shows usage instructions", help = true)
     private boolean showUsage;
-    
+
     @Parameter(names = "--cache", hidden = true)
     private boolean useCache;
 
@@ -149,12 +151,12 @@ class Settings {
     }
 
     boolean showUsageIfRequested() {
-        if (showUsage) {
+        if (showUsage)
             jCommander.usage();
-        }
+
         return showUsage;
     }
-    
+
     boolean useCache() {
         return useCache;
     }

@@ -3,6 +3,7 @@ package towe.wanikani.json.kanji;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
+
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -13,23 +14,23 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Generated("org.jsonschema2pojo")
 @JsonPropertyOrder({
-    "srs",
-    "srs_numeric",
-    "unlocked_date",
-    "available_date",
-    "burned",
-    "burned_date",
-    "meaning_correct",
-    "meaning_incorrect",
-    "meaning_max_streak",
-    "meaning_current_streak",
-    "reading_correct",
-    "reading_incorrect",
-    "reading_max_streak",
-    "reading_current_streak",
-    "meaning_note",
-    "user_synonyms",
-    "reading_note"
+        "srs",
+        "srs_numeric",
+        "unlocked_date",
+        "available_date",
+        "burned",
+        "burned_date",
+        "meaning_correct",
+        "meaning_incorrect",
+        "meaning_max_streak",
+        "meaning_current_streak",
+        "reading_correct",
+        "reading_incorrect",
+        "reading_max_streak",
+        "reading_current_streak",
+        "meaning_note",
+        "user_synonyms",
+        "reading_note"
 })
 public class UserSpecific {
 
@@ -71,7 +72,6 @@ public class UserSpecific {
     private final Map<String, Object> additionalProperties = new HashMap<>();
 
     /**
-     *
      * @return The srs
      */
     @JsonProperty("srs")
@@ -80,7 +80,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @param srs The srs
      */
     @JsonProperty("srs")
@@ -89,7 +88,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @return The srsNumeric
      */
     @JsonProperty("srs_numeric")
@@ -98,7 +96,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @param srsNumeric The srs_numeric
      */
     @JsonProperty("srs_numeric")
@@ -107,7 +104,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @return The unlockedDate
      */
     @JsonProperty("unlocked_date")
@@ -116,7 +112,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @param unlockedDate The unlocked_date
      */
     @JsonProperty("unlocked_date")
@@ -125,7 +120,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @return The availableDate
      */
     @JsonProperty("available_date")
@@ -134,7 +128,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @param availableDate The available_date
      */
     @JsonProperty("available_date")
@@ -143,7 +136,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @return The burned
      */
     @JsonProperty("burned")
@@ -152,7 +144,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @param burned The burned
      */
     @JsonProperty("burned")
@@ -161,7 +152,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @return The burnedDate
      */
     @JsonProperty("burned_date")
@@ -170,7 +160,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @param burnedDate The burned_date
      */
     @JsonProperty("burned_date")
@@ -179,7 +168,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @return The meaningCorrect
      */
     @JsonProperty("meaning_correct")
@@ -188,7 +176,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @param meaningCorrect The meaning_correct
      */
     @JsonProperty("meaning_correct")
@@ -197,7 +184,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @return The meaningIncorrect
      */
     @JsonProperty("meaning_incorrect")
@@ -206,7 +192,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @param meaningIncorrect The meaning_incorrect
      */
     @JsonProperty("meaning_incorrect")
@@ -215,7 +200,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @return The meaningMaxStreak
      */
     @JsonProperty("meaning_max_streak")
@@ -224,7 +208,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @param meaningMaxStreak The meaning_max_streak
      */
     @JsonProperty("meaning_max_streak")
@@ -233,7 +216,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @return The meaningCurrentStreak
      */
     @JsonProperty("meaning_current_streak")
@@ -242,7 +224,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @param meaningCurrentStreak The meaning_current_streak
      */
     @JsonProperty("meaning_current_streak")
@@ -251,7 +232,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @return The readingCorrect
      */
     @JsonProperty("reading_correct")
@@ -260,7 +240,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @param readingCorrect The reading_correct
      */
     @JsonProperty("reading_correct")
@@ -269,7 +248,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @return The readingIncorrect
      */
     @JsonProperty("reading_incorrect")
@@ -278,7 +256,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @param readingIncorrect The reading_incorrect
      */
     @JsonProperty("reading_incorrect")
@@ -287,7 +264,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @return The readingMaxStreak
      */
     @JsonProperty("reading_max_streak")
@@ -296,7 +272,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @param readingMaxStreak The reading_max_streak
      */
     @JsonProperty("reading_max_streak")
@@ -305,7 +280,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @return The readingCurrentStreak
      */
     @JsonProperty("reading_current_streak")
@@ -314,7 +288,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @param readingCurrentStreak The reading_current_streak
      */
     @JsonProperty("reading_current_streak")
@@ -323,7 +296,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @return The meaningNote
      */
     @JsonProperty("meaning_note")
@@ -332,7 +304,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @param meaningNote The meaning_note
      */
     @JsonProperty("meaning_note")
@@ -341,7 +312,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @return The userSynonyms
      */
     @JsonProperty("user_synonyms")
@@ -350,7 +320,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @param userSynonyms The user_synonyms
      */
     @JsonProperty("user_synonyms")
@@ -359,7 +328,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @return The readingNote
      */
     @JsonProperty("reading_note")
@@ -368,7 +336,6 @@ public class UserSpecific {
     }
 
     /**
-     *
      * @param readingNote The reading_note
      */
     @JsonProperty("reading_note")

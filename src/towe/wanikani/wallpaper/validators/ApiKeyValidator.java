@@ -2,6 +2,7 @@ package towe.wanikani.wallpaper.validators;
 
 import com.beust.jcommander.IParameterValidator;
 import com.beust.jcommander.ParameterException;
+
 import java.util.regex.Pattern;
 
 public class ApiKeyValidator implements IParameterValidator {
