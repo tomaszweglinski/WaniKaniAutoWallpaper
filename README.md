@@ -2,7 +2,7 @@
 WaniKani Automatic Wallpaper is a Java 1.8 application developed for Windows 10 that lets you generate and automatically update wallpaper showing your current progress on WaniKani.
 
 ## How to use
-- [Download application](https://github.com/tomaszweglinski/WaniKaniAutoWallpaper/raw/master/WaniKaniAutoWallpaper.jar).
+- [Download application](https://github.com/tomaszweglinski/WaniKaniAutoWallpaper/raw/master/out/artifacts/WaniKaniAutoWallpaper.jar).
 - Open directory where you saved it.
 - `Shift + right click` > `Open command window here`.
 - Type `java -jar WaniKaniAutoWallpaper.jar -k 9b83...edc7 --overview` in orded to generate overview of wallpapers with different fonts installed in your system (they will appear in `overview` directory). Remember to use your own API key instead of the dotted one.
