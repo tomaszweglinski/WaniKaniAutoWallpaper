@@ -15,6 +15,7 @@ public class ColorConverter implements IStringConverter<Color>, IParameterValida
     @Override
     public Color convert(String value) {
         Matcher matcher = PATTERN.matcher(value);
+
         if (matcher.matches()) {
             return new Color(Integer.parseInt(matcher.group(1), 16), Integer.parseInt(matcher.group(2), 16), Integer.parseInt(matcher.group(3), 16));
         } else {

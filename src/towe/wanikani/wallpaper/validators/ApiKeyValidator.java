@@ -11,8 +11,7 @@ public class ApiKeyValidator implements IParameterValidator {
 
     @Override
     public void validate(String name, String value) throws ParameterException {
-        if (!PATTERN.matcher(value).matches()) {
+        if (!PATTERN.matcher(value).matches())
             throw new ParameterException("\"" + name + "\": \"" + value + "\" is not a valid API key");
-        }
     }
 }

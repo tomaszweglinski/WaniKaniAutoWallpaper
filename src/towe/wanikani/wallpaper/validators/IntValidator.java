@@ -21,9 +21,8 @@ public abstract class IntValidator implements IParameterValidator {
             invalid = true;
         }
 
-        if (invalid) {
+        if (invalid)
             throw new ParameterException("\"" + name + "\": \"" + value + "\" is not a " + getClass().getSimpleName().toLowerCase() + " integer");
-        }
     }
 
     public static class Positive extends IntValidator {

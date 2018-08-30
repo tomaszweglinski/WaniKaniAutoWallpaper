@@ -38,6 +38,7 @@ class Layout {
         g2d.setColor(settings.getBackgroundColor());
         g2d.fillRect(0, 0, settings.getWidth(), settings.getHeight());
         int ascent = g2d.getFontMetrics(font).getAscent();
+
         for (int i = 0; i < kanjiList.size(); ++i) {
             Kanji kanji = kanjiList.get(i);
             g2d.setColor(settings.getColor(kanji));

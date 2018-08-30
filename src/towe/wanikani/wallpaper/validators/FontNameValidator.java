@@ -11,9 +11,8 @@ public class FontNameValidator implements IParameterValidator {
     @Override
     public void validate(String name, String value) throws ParameterException {
         for (Font font : GraphicsEnvironment.getLocalGraphicsEnvironment().getAllFonts()) {
-            if (value.equals(font.getName())) {
+            if (value.equals(font.getName()))
                 return;
-            }
         }
 
         throw new ParameterException("\"" + name + "\": font named \"" + value + "\" does not exist");
