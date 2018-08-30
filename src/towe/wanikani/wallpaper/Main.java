@@ -16,21 +16,19 @@ import java.io.IOException;
 import java.net.URL;
 import java.nio.channels.Channels;
 import java.text.Collator;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-import java.util.TreeSet;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.imageio.ImageIO;
 import towe.wanikani.json.kanji.Kanji;
 import towe.wanikani.json.kanji.Response;
 
+@SuppressWarnings("ResultOfMethodCallIgnored")
 public class Main {
 
-    public static final String OVERVIEW_DIR_NAME = "overview";
-    public static final String OUTPUT_FILE_NAME = "wallpaper";
-    public static final String OUTPUT_FORMAT = "PNG";
+    private static final String OVERVIEW_DIR_NAME = "overview";
+    private static final String OUTPUT_FILE_NAME = "wallpaper";
+    private static final String OUTPUT_FORMAT = "PNG";
 
     private static final Pattern FONT_NAME_PATTERN = Pattern.compile("([^.]+)(\\..+)?");
 
@@ -76,7 +74,7 @@ public class Main {
         }
     }
 
-    public static void log(Object data) {
+    private static void log(Object data) {
         if (data instanceof Throwable) {
             System.err.println(((Throwable) data).getMessage());
         } else {
@@ -84,7 +82,7 @@ public class Main {
         }
     }
     
-    public static List<Kanji> obtainKanjiList(Settings settings) throws IOException {
+    private static List<Kanji> obtainKanjiList(Settings settings) throws IOException {
         List<Kanji> kanjiList;
         File cache = new File(settings.getApiKey() + ".json");
         URL apiUrl = new URL("https://www.wanikani.com/api/v1.4/user/" + settings.getApiKey() + "/kanji/" + commaSeparatedRange(1, 60));
@@ -98,11 +96,12 @@ public class Main {
             log("Connecting to WaniKani...");
             kanjiList = new ObjectMapper().readValue(apiUrl, Response.class).getRequestedInformation();
         }
-        Collections.sort(kanjiList, (a, b) -> a.getLevel() - b.getLevel());
+        kanjiList.sort(Comparator.comparingInt(Kanji::getLevel));
         return kanjiList;
     }
 
-    public static String commaSeparatedRange(int min, int max) {
+    @SuppressWarnings("SameParameterValue")
+    private static String commaSeparatedRange(int min, int max) {
         StringBuilder buffer = new StringBuilder();
         for (int i = min; i <= max; ++i) {
             buffer.append(i);
@@ -113,7 +112,7 @@ public class Main {
         return buffer.toString();
     }
 
-    public static String[] getSupportedFontNames(Iterable<Kanji> iterable, Graphics context) {
+    private static String[] getSupportedFontNames(Iterable<Kanji> iterable, Graphics context) {
         Collection<String> supportedFontNames = new TreeSet<>(Collator.getInstance());
         fontLoop:
         for (Font font : GraphicsEnvironment.getLocalGraphicsEnvironment().getAllFonts()) {
@@ -137,6 +136,6 @@ public class Main {
             }
             supportedFontNames.add(name);
         }
-        return supportedFontNames.toArray(new String[supportedFontNames.size()]);
+        return supportedFontNames.toArray(new String[0]);
     }
 }

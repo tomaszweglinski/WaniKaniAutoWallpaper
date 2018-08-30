@@ -12,7 +12,7 @@ import towe.wanikani.wallpaper.validators.ApiKeyValidator;
 import towe.wanikani.wallpaper.validators.IntValidator;
 
 @SuppressWarnings("FieldMayBeFinal")
-public class Settings {
+class Settings {
 
     private static final ColorConverter COLOR_CONVERTER = new ColorConverter();
 
@@ -78,39 +78,39 @@ public class Settings {
 
     private JCommander jCommander;
 
-    public void initialize(String[] args) {
+    void initialize(String[] args) {
         jCommander = new JCommander(this, args);
     }
 
-    public String getApiKey() {
+    String getApiKey() {
         return apiKey;
     }
 
-    public int getWidth() {
+    int getWidth() {
         return width;
     }
 
-    public int getHeight() {
+    int getHeight() {
         return height;
     }
 
-    public int getMarginLeft() {
+    int getMarginLeft() {
         return marginLeft;
     }
 
-    public int getMarginRight() {
+    int getMarginRight() {
         return marginRight;
     }
 
-    public int getMarginTop() {
+    int getMarginTop() {
         return marginTop;
     }
 
-    public int getMarginBottom() {
+    int getMarginBottom() {
         return marginBottom;
     }
 
-    public Color getColor(Kanji kanji) {
+    Color getColor(Kanji kanji) {
         UserSpecific userSpecific = kanji.getUserSpecific();
         if (userSpecific != null) {
             switch (userSpecific.getSrs()) {
@@ -132,30 +132,30 @@ public class Settings {
         }
     }
 
-    public Color getBackgroundColor() {
+    Color getBackgroundColor() {
         return colorBackground;
     }
 
-    public String getFontName() {
+    String getFontName() {
         return fontName;
     }
 
-    public boolean overviewRequested() {
+    boolean overviewRequested() {
         return overviewMode;
     }
 
-    public boolean autoRequested() {
+    boolean autoRequested() {
         return autoMode;
     }
 
-    public boolean showUsageIfRequested() {
+    boolean showUsageIfRequested() {
         if (showUsage) {
             jCommander.usage();
         }
         return showUsage;
     }
     
-    public boolean useCache() {
+    boolean useCache() {
         return useCache;
     }
 }

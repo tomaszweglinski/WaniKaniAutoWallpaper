@@ -7,7 +7,7 @@ public abstract class IntValidator implements IParameterValidator {
 
     private final int minValue;
 
-    protected IntValidator(int minValue) {
+    IntValidator(int minValue) {
         this.minValue = minValue;
     }
 
