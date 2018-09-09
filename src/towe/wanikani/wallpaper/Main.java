@@ -53,6 +53,10 @@ public class Main {
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         Layout layout = new Layout(kanjiList, settings);
 
+        if (settings.useRandomOrder()) {
+            layout.kanjiRandomise();
+        }
+
         if (settings.overviewRequested()) {
             System.out.println("Generating overview...");
             File subdirectory = new File(OVERVIEW_DIR_NAME);

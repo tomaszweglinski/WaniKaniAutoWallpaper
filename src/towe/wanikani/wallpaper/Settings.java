@@ -72,6 +72,9 @@ class Settings {
     @Parameter(names = {"-a", "--auto"}, description = "Sets new wallpaper and removes output image")
     private boolean autoMode;
 
+    @Parameter(names = {"-r", "--random"}, description = "Arrange the kanji in a random order")
+    private boolean useRandomOrder = false;
+
     @Parameter(names = "--help", description = "Shows usage instructions", help = true)
     private boolean showUsage;
 
@@ -155,6 +158,10 @@ class Settings {
             jCommander.usage();
 
         return showUsage;
+    }
+
+    boolean useRandomOrder() {
+        return useRandomOrder;
     }
 
     boolean useCache() {
