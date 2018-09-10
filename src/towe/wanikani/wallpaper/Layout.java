@@ -2,7 +2,9 @@ package towe.wanikani.wallpaper;
 
 import java.awt.Font;
 import java.awt.Graphics2D;
+import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 
 import towe.wanikani.json.kanji.Kanji;
 
@@ -30,6 +32,10 @@ class Layout {
         columns = cols;
         leftMargin = (settings.getWidth() + settings.getMarginLeft() - settings.getMarginRight() - cols * symbolSize) * 0.5;
         topMargin = (settings.getHeight() + settings.getMarginTop() - settings.getMarginBottom() - rows * symbolSize) * 0.5;
+    }
+
+    void kanjiRandomise() {
+        Collections.shuffle(kanjiList, new Random(System.nanoTime()));
     }
 
     void paint(Graphics2D g2d, String fontName) {
