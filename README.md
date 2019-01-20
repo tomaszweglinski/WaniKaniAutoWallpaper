@@ -14,3 +14,6 @@ WaniKani Automatic Wallpaper is a Java 1.8 application developed for Windows 10 
  - Updating wallpaper after reboot may take about 30 seconds.
 
 Type `java -jar WaniKaniAutoWallpaper.jar --help` in order to see full list of options (colors, margins etc.).
+
+## Wallpaper example
+![Image not found](https://discourse-cdn-sjc1.com/business5/uploads/wanikani_community/original/2X/a/ae68830d69528a5556209b8b0e83f12c83163181.png)
